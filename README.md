@@ -39,6 +39,6 @@ docker build -t mock-server-alumno .
 Ejecutar el contenedor:
 
 ```
-docker run -p 8088:8088 mock-server-alumno
+docker run -p 8080:8080 mock-server-alumno
 ```
 El servidor estará accesible en http://localhost:8088

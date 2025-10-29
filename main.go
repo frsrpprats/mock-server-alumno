@@ -60,7 +60,7 @@ func setupRouter() *gin.Engine {
 
 func main() {
 	r := setupRouter()
-	r.Run(":8088")
+	r.Run(":8080")
 }
 
 func generateMockData() []Alumno {

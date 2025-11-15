@@ -5,23 +5,20 @@ import (
 	"net/http"
 	"slices"
 	"strconv"
-	"time"
 
 	"github.com/brianvoe/gofakeit/v6"
 	"github.com/gin-gonic/gin"
 )
 
 type Alumno struct {
-	Id              int       `fake:"{number:1}" json:"id"`
-	Nombre          string    `fake:"{firstname}" json:"nombre"`
-	Apellido        string    `fake:"{lastname}" json:"apellido"`
-	NroDocumento    int       `fake:"{number:10000000}" json:"nro_documento"`
-	TipoDocumento   string    `fake:"{randomstring:[DNI,Pasaporte,LE]}" json:"tipo_documento"`
-	FechaNacimiento time.Time `json:"fecha_nacimiento"` //Default Go format (RFC3339)
-	FechaIngreso    time.Time `json:"fecha_ingreso"`    //Default Go format (RFC3339)
-	Sexo            string    `fake:"{randomstring:[M,F]}" json:"sexo"`
-	NroLegajo       int       `fake:"{number:1000}" json:"nro_legajo"`
-	EspecialidadId  int       `fake:"{number:1}" json:"especialidad_id"`
+	Id             int    `fake:"{number:1}" json:"id"`
+	Nombre         string `fake:"{firstname}" json:"nombre"`
+	Apellido       string `fake:"{lastname}" json:"apellido"`
+	NroDocumento   int    `fake:"{number:10000000}" json:"nro_documento"`
+	TipoDocumento  string `fake:"{randomstring:[DNI,Pasaporte,LE]}" json:"tipo_documento"`
+	Sexo           string `fake:"{randomstring:[M,F]}" json:"sexo"`
+	NroLegajo      int    `fake:"{number:1000}" json:"nro_legajo"`
+	EspecialidadId int    `fake:"{number:1}" json:"especialidad_id"`
 }
 
 func setupRouter() *gin.Engine {

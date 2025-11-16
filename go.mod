@@ -2,12 +2,12 @@ module mock
 
 go 1.24.4
 
-require github.com/gin-gonic/gin v1.11.0
+require (
+	github.com/brianvoe/gofakeit/v7 v7.8.1
+	github.com/gin-gonic/gin v1.11.0
+)
 
 require (
-	github.com/brianvoe/gofakeit v3.18.0+incompatible // indirect
-	github.com/brianvoe/gofakeit/v6 v6.28.0 // indirect
-	github.com/brianvoe/gofakeit/v7 v7.8.1 // indirect
 	github.com/bytedance/sonic v1.14.0 // indirect
 	github.com/bytedance/sonic/loader v0.3.0 // indirect
 	github.com/cloudwego/base64x v0.1.6 // indirect
